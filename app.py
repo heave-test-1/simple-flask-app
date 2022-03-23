@@ -9,6 +9,7 @@ app.debug = True
 @app.route("/")
 def hello_world():
     headers = request.headers
+    print("Got request")
     print("Request headers:\n" + str(headers))
     return "Request headers:\n" + str(headers)
 
