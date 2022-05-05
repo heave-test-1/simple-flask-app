@@ -1,7 +1,5 @@
 from flask import Flask
 from flask import request
-import json
-
 
 app = Flask(__name__)
 app.debug = True
@@ -13,6 +11,6 @@ def hello_world():
     for h in headers:
         print(h)
     print("Request headers:\n" + str(headers))
-    return json.dumps(headers)
+    return str(headers)
 
 app.run(host="0.0.0.0", port=8080)
