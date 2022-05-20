@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install -r requirements.txt
-RUN python app.py
+CMD python app.py
